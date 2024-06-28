@@ -8,6 +8,7 @@ data = dataset["train"]
 
 # Convertir dataset a pandas
 df = pd.DataFrame(data)
+print(df.dtypes)
 
 # Separar df en dos diferentes, uno para fallecidos y otro para vivos
 df_fallecidos = df[df['is_dead'] == 1]
